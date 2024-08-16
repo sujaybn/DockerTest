@@ -45,7 +45,22 @@ cd DockerTest
 
 ### 2. Kafka Setup
 
-Make sure you have Kafka running locally. You can download and start Kafka by following the [official documentation](https://kafka.apache.org/quickstart).
+Make sure you have Kafka running locally. You can download and start Kafka by following the [official documentation](https://kafka.apache.org/quickstart) or you can follow below steps to setup locally via terminal.
+
+### Running Kafka Locally (Manual Setup):
+
+#### Download Kafka : Download Kafka from the official website or using a terminal:
+
+```bash
+wget https://downloads.apache.org/kafka/3.5.0/kafka_2.13-3.5.0.tgz
+```
+
+Extract the downloaded archive:
+
+```bash
+tar -xzf kafka_2.13-3.5.0.tgz
+cd kafka_2.13-3.5.0
+```
 
 ### Start ZooKeeper using the default configuration:
 
