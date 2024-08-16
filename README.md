@@ -47,6 +47,19 @@ cd DockerTest
 
 Make sure you have Kafka running locally. You can download and start Kafka by following the [official documentation](https://kafka.apache.org/quickstart).
 
+### Start ZooKeeper using the default configuration:
+
+```bash
+bin/zookeeper-server-start.sh config/zookeeper.properties
+```
+
+### Start Kafka Broker
+Once ZooKeeper is running, start the Kafka broker: Open a new terminal (leaving the ZooKeeper terminal running) and start the Kafka server:
+
+```bash
+bin/kafka-server-start.sh config/server.properties
+```
+
 ### 3. Build the Project
 
 The project uses Maven as the build tool. Ensure that all dependencies, including the Kafka client, are included.
