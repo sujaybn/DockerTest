@@ -66,35 +66,6 @@ To containerize the application, we use a multi-stage Dockerfile to build and ru
 - **Builder stage**: Uses a Maven image to compile and package the Java application into a fat JAR.
 - **Runtime stage**: Uses a lightweight OpenJDK 11 JRE image to run the application.
 
-#### Dockerfile:
-
-```Dockerfile
-# Use Maven image to build the application
-FROM maven:3.8.6-openjdk-11 AS builder
-
-# Set the working directory
-WORKDIR /app
-
-# Copy the Maven project files
-COPY pom.xml .
-COPY src ./src
-
-# Build the project (including JAR packaging)
-RUN mvn clean package
-
-# Use a smaller base image for runtime
-FROM openjdk:11-jre-slim
-
-# Set the working directory
-WORKDIR /app
-
-# Copy the JAR file from the builder stage
-COPY --from=builder /app/target/KafkaApp-1.0-SNAPSHOT.jar /app/KafkaApp-1.0-SNAPSHOT.jar
-
-# Specify the command to run the JAR file
-CMD ["java", "-jar", "/app/KafkaApp-1.0-SNAPSHOT.jar"]
-```
-
 ### 5. Build the Docker Image
 
 To build the Docker image, run:
