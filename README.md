@@ -71,7 +71,7 @@ To containerize the application, we use a multi-stage Dockerfile to build and ru
 To build the Docker image, run:
 
 ```bash
-docker build -t kafka-app .
+docker build -t DockerTest .
 ```
 
 ### 6. Running the Application in Docker
@@ -79,7 +79,7 @@ docker build -t kafka-app .
 To run the application using Docker, execute the following command:
 
 ```bash
-docker run --network="host" kafka-app
+docker run --network="host" DockerTest
 ```
 
 The `--network="host"` option is required so that the Docker container can communicate with the Kafka broker running on the host.
