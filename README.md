@@ -39,8 +39,8 @@ Before you start, make sure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd <repository-directory>
+git clone https://github.com/sujaybn/DockerTest.git
+cd DockerTest
 ```
 
 ### 2. Kafka Setup
