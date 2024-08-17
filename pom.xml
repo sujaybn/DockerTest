@@ -61,7 +61,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>org.example.KafkaApp</mainClass> <!-- Ensure this is the fully qualified name -->
+                            <mainClass>org.kafka.pubsub.KafkaApp</mainClass> <!-- Ensure this is the fully qualified name -->
                         </manifest>
                     </archive>
                 </configuration>

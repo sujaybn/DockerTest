@@ -37,7 +37,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>org.example.KafkaApp</mainClass>
+              <mainClass>org.kafka.pubsub.KafkaApp</mainClass>
             </manifest>
           </archive>
         </configuration>

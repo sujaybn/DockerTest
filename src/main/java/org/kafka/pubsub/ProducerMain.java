@@ -1,4 +1,4 @@
-package org.example;
+package org.kafka.pubsub;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;

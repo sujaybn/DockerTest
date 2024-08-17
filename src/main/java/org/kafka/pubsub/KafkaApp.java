@@ -1,4 +1,4 @@
-package org.example;
+package org.kafka.pubsub;
 
 public class KafkaApp {
     public static void main(String[] args) {
